@@ -49,5 +49,54 @@
     <h5 style="margin: 0;">KARTU STUDI SEMENTARA</h5>
     " TAHUN AJARAN 2022/2023 SEMESTER GANJIL "
   </div>
+  <div>
+    <br>
+    <h5><pre class="tab">NIM/Nama            : <span id="nimout"></span> / <span id="namaout"></span></pre></h5>
+    <h5><pre class="tab">Beban               : </pre></h5>
+    <h5><pre class="tab">IPS terakhir        : </pre></h5>
+    <h5><pre class="tab">SKS kumulatif       : </pre></h5>
+    <h5><pre class="tab">IPK Kini            : </pre></h5>
+  </div>
+  <table class="table" border="1px solid black" id="tabelcetakkrrs">
+    <thead class="thead-dark">
+        <tr>
+            <th>Kode</th>
+            <th>Nama Matakuliah</th>
+            <th>SKS</th>
+            <th>Kelas</th>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Dosen</th>
+            <th>Ruang</th>
+        </tr>
+    </thead>
+    <tbody id="tabelcetakkrrs">
+
+    </tbody>
+</table>
+
+
+<div class="sobekdisini">
+    <br><br>
+    <p><pre class="tab">        ------------------------------- Sobek Disini -------------------------------        </pre></p>
+</div>
+<p>PERHATIAN</p>
+<p><pre class="tab">    Nomor Registrasi anda adalah</pre></p>
+<p><pre class="tab">    <span id="nimout"></span></pre></p>
+<p><pre class="tab">    Harap catat dan ingat nomor ini dan jangan diperlihatkan ke orang lain</pre></p>
+<p><pre class="tab">    KSS ini sebagai bukti pengambilan KSM (Kartu Studi Mahasiswa)</pre></p>
+</div>
+<script src="krrs.js"></script>
+<script>
+  var nomormahasiswa = localStorage.getItem("nimvalue");
+  var namamahasiswa = localStorage.getItem("namavalue");
+  document.getElementById('nimout').innerHTML=localStorage.getItem("nimvalue");
+  document.getElementById('namaout').innerHTML=localStorage.getItem("namavalue");
+
+  var localarray = localStorage.getItem('Arraycheckboxvalue');
+  var thearray = JSON.parse(localarray);
+
+  var table = document.getElementById('tabelcetakkrrs');
+
 </body>
 </html>
