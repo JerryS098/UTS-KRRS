@@ -16,5 +16,43 @@
   }
   </style>
 <body>
+  <div class="container">
+    <h2 class="text-center"><img src="assets/un4.png" width="50px" height="50px"><br>Login</h2>
+    <hr>
+    <form id="loginform" action="" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-user"></i></div>
+            <input type="text" class="form-control" id="newusername" name="newusername" placeholder="enter username">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-user"></i></div>
+            <input type="email" class="form-control" id="newemail" name="newemail" placeholder="enter email">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-unlock-alt"></i></div>
+            <input type="password" class="form-control" id="newpassword" name="newpassword" placeholder="enter password">
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" onclick="newsignup()" href="signin.html">Make Account</a>
+      
+      <p id="akses"></p>
+    </form>
+  </div>
+  <script src="krrs.js"></script>
+  <script src="https://kit.fontawesome.com/dc636bd3ef.js" crossorigin="anonymous"></script>
   </body>
 </html>
