@@ -118,6 +118,54 @@
                 <td>07.30-11.10</td>
                 <td>Muhammad Fahnudin ST, M.Sc</td>
             </tr>
+            <tr>
+                <td><input type="checkbox" class="chkbox" id="1067" value="1067"></td>
+                <td>1067</td>
+                <td>Web Programming</div></td>
+                <td>4</td>
+                <td>Senin</td>
+                <td>13.30-17.10</td>
+                <td>Tomy Herman S.kom, M.Kom</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="chkbox" id="7956" value="7956"></td>
+                <td>7956</td>
+                <td>Data Entry</div></td>
+                <td>4</td>
+                <td>Jumat</td>
+                <td>13.30-17.10</td>
+                <td>Yessa Kristanto S.T, M.Kom</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-outline-dark" href="index1.html">Halaman Utama</a>
+    <button type="submit" class="btn btn-primary" onclick="submitkrrs()">Submit</button>
+  </div>
+  <script src="krrs.js"></script>
+  <script>
+    var nomormahasiswa = localStorage.getItem("nimvalue");
+    var namamahasiswa = localStorage.getItem("namavalue");
+
+    document.getElementById('nimout').innerHTML=localStorage.getItem("nimvalue");
+    document.getElementById('namaout').innerHTML=localStorage.getItem("namavalue");
+
+    // membaca value mata kuliah yang dipilih melalui checkbox
+    var listarraycheckbox = [];
+    var checkboxlist = document.querySelectorAll('.chkbox');
+    
+    for (var chkbox of checkboxlist) {
+        chkbox.addEventListener('click', function() {
+          if(this.checked == true) {
+            // insert checkbox value to variable listarraycheckbox
+            listarraycheckbox.push(this.value);
+          } else {
+            // remove checkbox value in variable listarraycheckbox
+            listarraycheckbox = listarraycheckbox.filter(e => e !== this.value);
+          }
+        })
+    }
+
+  </script>
 
 </body>
 </html>
