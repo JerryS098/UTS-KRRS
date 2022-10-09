@@ -37,3 +37,13 @@ function loginkrrs() {
         document.getElementById('akses').innerHTML='Login Failed!';
     }
 }
+function newsignup() {
+    var newemailmahasiswa = document.getElementById('newemail').value;
+    var newpasswordmahasiswa = document.getElementById('newpassword').value;
+    localStorage.setItem("newemailvalue", newemailmahasiswa);
+    localStorage.setItem("newpasswordvalue", newpasswordmahasiswa);
+
+    localStorage.removeItem("nimvalue");
+    localStorage.removeItem("namavalue");
+    localStorage.removeItem("Arraycheckboxvalue");
+}
