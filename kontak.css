@@ -120,6 +120,7 @@
     align-items: center;
     margin-bottom: 15px;
 }
+
 .info .infobox div span{
     min-width: 40px;
     height: 40px;
@@ -136,17 +137,20 @@
     color:#fff;
     font-size: 1em;
 }
+
 .info .infobox div a{
 
     color: #fff;
     text-decoration: none;
     font-size: 1em;
 }
+
 .sci{
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
+
 .sci li{
     list-style: none;
     margin-right: 30px;
