@@ -10,3 +10,11 @@ function submitprofil() {
 function logout() {
     localStorage.clear();
 }
+
+function submitkrrs(){
+    alert("Pilihan mata kuliah berhasil disimpan!");
+
+    localStorage.setItem('Arraycheckboxvalue', JSON.stringify(listarraycheckbox));
+
+    window.location.href='index1.html';
+}
