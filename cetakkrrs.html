@@ -88,15 +88,66 @@
 </div>
 <script src="krrs.js"></script>
 <script>
-  var nomormahasiswa = localStorage.getItem("nimvalue");
-  var namamahasiswa = localStorage.getItem("namavalue");
-  document.getElementById('nimout').innerHTML=localStorage.getItem("nimvalue");
-  document.getElementById('namaout').innerHTML=localStorage.getItem("namavalue");
+  var nomormahasiswa = localStorage.getItem("nimvalue"); 
+  var namamahasiswa = localStorage.getItem("namavalue"); 
+  document.getElementById('nimout').innerHTML=localStorage.getItem("nimvalue"); 
+  document.getElementById('namaout').innerHTML=localStorage.getItem("namavalue"); 
 
-  var localarray = localStorage.getItem('Arraycheckboxvalue');
+  var localarray = localStorage.getItem('Arraycheckboxvalue'); 
   var thearray = JSON.parse(localarray);
 
   var table = document.getElementById('tabelcetakkrrs');
+  
+  for(i = 0; i < thearray.length; i++) {
+    if (thearray[i] === '1234') {
+        var row = `<tr>
+                    <td>1234</td>
+                    <td>Introduction to Algorithm</div></td>
+                    <td>4</td> 
+                    <td>A</td> 
+                    <td>Senin</td> 
+                    <td>07.30-11.10</td> 
+                    <td>Udin S.kom, M.Kom</td>
+                    <td>R804</td> 
+                  </tr>` 
+        table.innerHTML += row;
+    } else if (thearray[i] === '5678') {
+      var row = `<tr> 
+                    <td>5678</td> 
+                    <td>Computation</div></td>
+                    <td>4</td> 
+                    <td>A</td> 
+                    <td>Selasa</td> 
+                    <td>07.30-11.10</td> 
+                    <td>Kelly Hermawan S.kom, M.Kom</td>
+                    <td>R904</td> 
+                  </tr>` 
+        table.innerHTML += row;
+    } else if (thearray[i] === '1290') {
+      var row = `<tr>
+                    <td>1290</td>
+                    <td>Computer Hardware & Computer Software</div></td>
+                    <td>6</td>
+                    <td>A</td>
+                    <td>Rabu</td>
+                    <td>09.30-15.10</td>
+                    <td>Ucok Halim S.kom, M.SI</td>
+                    <td>lab 901</td>
+                  </tr>`
+        table.innerHTML += row;
+    } else if (thearray[i] === '4912') {
+      var row = `<tr>
+                    <td>4912</td>
+                    <td>Game Development</div></td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>Selasa</td>
+                    <td>13.30-17.10</td>
+                    <td>Gerry Hasanuddin S.SI, M.Sc</td>
+                    <td>lab 601</td>
+                  </tr>`
+        table.innerHTML += row;
+    }
 
 </body>
 </html>
