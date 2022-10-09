@@ -57,3 +57,68 @@ label.logo{
     font-weight: bold;
     
 }
+.sidebar{
+    position:fixed;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    top:100px;
+    background: #5D0000;
+    overflow: auto;
+}
+.sidebar header{
+    font-size: 35px;
+    color: burlywood;
+    text-align: center;
+    line-height: 70px;
+    background:darkolivegreen;
+    user-select: none;
+}
+.sidebar ul a{
+    display : block;
+    height: 7%;
+    width:100%;
+    line-height: 40px;
+    font-size: 15px;
+    color:whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.8);
+    border-bottom : 1px solid black;
+    transition: .5s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 15px;
+}
+
+nav img{
+    padding-left: 30px;
+    padding-top: 15px;
+    width: 100px;
+}
+
+/* hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    float: right;
+    margin-top: 35px;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
