@@ -187,3 +187,52 @@ div.content1 {
     padding: 5px;
     background-color: #7FFFD4;
 }
+div.panduan {
+    margin-left: 275px;
+    padding: 135px 16px 0px 16px;
+    height: 1000px;
+}
+
+.panduanimg{
+    width :80%;
+    border: 1px black solid;
+    border-radius: 15px;
+}
+
+.logouttext{
+    text-align: center;
+    padding: 110px 16px 0px 16px;
+    height: 1000px;
+}
+
+.form-group-email{
+    padding-top: 120px;
+    
+}
+
+form{
+    padding-left: 30%;
+    width: 70%;
+}
+
+.krrs{
+    margin-left: 250px;
+    padding: 110px 16px 0px 16px;
+    height: 1000px;
+    
+}
+
+.krrstitle{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    width: 40%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    padding: 40px;
+    color:white;
+}
